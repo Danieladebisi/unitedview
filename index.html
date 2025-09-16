@@ -1,137 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>iPhone 17 Africa Prices</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      background: linear-gradient(90deg,#09bedf 0%,#3e4eff 100%);
-      font-family: 'Segoe UI', Arial, sans-serif;
-      color: #232f3e;
-      margin: 0;
-      padding: 0;
-    }
-    .header {
-      text-align: center;
-      margin: 2rem 0 1rem 0;
-      font-size: 2.2rem;
-      font-weight: bold;
-      background: linear-gradient(90deg, #fff, #44eaff);
-      color: #0c2c4c;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .subtitle {
-      text-align: center;
-      margin-bottom: 0.5rem;
-      font-size: 1.12rem;
-      color: #f1feff;
-      opacity: 0.8;
-    }
-    .africa-container {
-      width: 96vw;
-      max-width: 700px;
-      height: 600px;
-      margin: 0 auto;
-      position: relative;
-      background: #eef8ff2d;
-      border-radius: 18px;
-      box-shadow: 0 1px 8px #2b4e8558;
-    }
-    svg.africa-map {
-      width: 100%;
-      height: 100%;
-      display: block;
-    }
-    .price-tag {
-      position: absolute;
-      display: flex;
-      align-items: center;
-      background: rgba(15,40,90,0.95);
-      color: #fff;
-      font-size: 1rem;
-      border-radius: 22px;
-      padding: 8px 16px 8px 8px;
-      font-weight: 600;
-      box-shadow: 0 2px 14px rgba(30,34,110,.16);
-      border: 1.5px solid #fff2;
-      gap: 0.5em;
-      pointer-events: none;
-    }
-    .flag {
-      width: 24px;
-      height: 17px;
-      border-radius: 3px;
-      object-fit: cover;
-      border: 1px solid #eaeaea;
-      margin-right: 8px;
-    }
-    /* Approximate positions for price tags */
-    .nigeria   { left: 44%; top: 54%; }
-    .southafrica { left: 58%; top: 88%; }
-    .egypt     { left: 78%; top: 8%; }
-    .kenya     { left: 72%; top: 61%; }
-    .ghana     { left: 25%; top: 65%; }
-    .morocco   { left: 11%; top: 7%; }
-    .algeria   { left: 33%; top: 13%; }
-    .cameroon  { left: 56%; top: 59%; }
-    .ivc       { left: 18%; top: 69%; }
-    .ethiopia  { left: 78%; top: 41%; }
-    .credit {
-      text-align: right;
-      font-size: 1.25rem;
-      opacity: 0.8;
-      letter-spacing: 0.8px;
-      color: #fff;
-      margin: 1.9rem 2.2rem 0 0;
-      font-weight: bold;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Reference Letter for Tejumola Adebisi</title>
+    <style>
+        /* Use the browser's print-to-PDF to keep selectable text */
+        @page {
+            size: A4;
+            /* Tighter margins to help content fit on a single page */
+            margin: 15mm; 
+        }
+        :root {
+            --tech-mansion-blue: #0f3460;
+            --tech-mansion-orange: #f07900;
+            --accent-grey: #eaf0fa;
+            --text-color: #222;
+            --heading-font: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+            --body-font: 'Georgia', 'Times New Roman', Times, serif;
+        }
+        body {
+            font-family: var(--body-font);
+            font-size: 15px;
+            line-height: 1.7;
+            margin: 0;
+            background: linear-gradient(135deg, var(--accent-grey) 0%, #fff 100%);
+            color: var(--text-color);
+        }
+        #letter-container {
+            background: #fff;
+            margin: 40px auto;
+            padding: 48px 36px;
+            max-width: 800px;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(15,52,96,0.12);
+            position: relative;
+            /* Removed fixed A4 min-height to avoid capturing excess whitespace in PDF */
+        }
+        .letterhead {
+            text-align: center;
+            margin-bottom: 2.5em;
+            padding-bottom: 1em;
+            border-bottom: 2px solid var(--tech-mansion-orange);
+        }
+        .letterhead img {
+            display: block;
+            margin: 0 auto 10px auto;
+            width: 160px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(15,52,96,0.08);
+        }
+        .letterhead-info {
+            text-align: center;
+        }
+        .letterhead-title {
+            font-family: var(--heading-font);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--tech-mansion-blue);
+            margin-bottom: 0.2em;
+            letter-spacing: 1px;
+        }
+        .letterhead-contact {
+            font-size: 1rem;
+            color: var(--tech-mansion-blue);
+            margin-bottom: 0.2em;
+        }
+        .letterhead-contact span {
+            margin-right: 16px;
+        }
+        .date {
+            text-align: right;
+            font-size: 1.1rem;
+            font-family: var(--heading-font);
+            color: var(--tech-mansion-orange);
+            margin-bottom: 2em;
+        }
+        .recipient {
+            font-size: 1.1rem;
+            font-family: var(--heading-font);
+            color: var(--tech-mansion-blue);
+            margin-bottom: 1.5em;
+        }
+        .letter-content p {
+            margin-bottom: 1.2em;
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+        .signature-block {
+            margin-top: 3em;
+            color: var(--text-color);
+        }
+        .signature-block p {
+            margin: 0;
+        }
+        .signature-name {
+            font-weight: bold;
+            font-size: 1.15rem;
+            color: var(--tech-mansion-blue);
+            margin-top: 0.7em;
+        }
+        .signature-title {
+            font-style: italic;
+            color: var(--tech-mansion-orange);
+        }
+        #download-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 32px auto 0 auto;
+            padding: 14px 32px;
+            font-size: 1.1rem;
+            font-family: var(--heading-font);
+            font-weight: 600;
+            cursor: pointer;
+            background: linear-gradient(90deg, var(--tech-mansion-blue) 60%, var(--tech-mansion-orange) 100%);
+            color: #fff;
+            border: none;
+            border-radius: 7px;
+            box-shadow: 0 2px 8px rgba(15,52,96,0.08);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        #download-btn:hover {
+            background: linear-gradient(90deg, #1a4f8d 60%, #f07900 100%);
+            box-shadow: 0 4px 16px rgba(15,52,96,0.16);
+        }
+        #download-btn svg {
+            width: 22px;
+            height: 22px;
+            fill: #fff;
+        }
+        @media (max-width: 900px) {
+            #letter-container {
+                padding: 24px 8px;
+                max-width: 98vw;
+            }
+            .letterhead {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .letterhead img {
+                width: 70px;
+            }
+        }
+        @media print {
+            /* Ensure colors render as intended on print */
+            * {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            body {
+                background: #fff;
+                padding: 0;
+                font-size: 13px; /* Slightly smaller to fit one page */
+                line-height: 1.55;
+            }
+            #download-btn {
+                display: none;
+            }
+            #letter-container {
+                box-shadow: none;
+                border-radius: 0;
+                padding: 0;
+                margin: 0;
+                max-width: initial; /* allow full page width within @page margins */
+                page-break-inside: avoid;
+            }
+            .letterhead {
+                margin-bottom: 1.2em;
+                padding-bottom: 0.6em;
+                border-bottom-width: 1.5px;
+            }
+            .letterhead img {
+                width: 180px; /* Larger for stronger presence */
+                border-radius: 0; /* Remove rounded corners for a clean letterhead look */
+                box-shadow: none; /* Remove shadows to avoid light halo */
+                filter: contrast(1.15) saturate(1.2); /* Boost print contrast */
+                background: transparent !important;
+            }
+            .letterhead-contact {
+                font-size: 0.95rem;
+            }
+            .letter-content p {
+                margin-bottom: 0.9em; /* Tighter spacing to help fit */
+                font-size: 0.98rem;
+            }
+            .signature-block {
+                margin-top: 2em;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="header">
-    Global iPhone 17 Prices<br><span style="font-size:1.15rem;letter-spacing:1px;">Africa Edition</span>
-  </div>
-  <div class="subtitle">256GB iPhone 17 as of September 2025 (local currency)</div>
-  <div class="africa-container">
-    <!-- Blank SVG Africa Map (public domain from freesvg.org) -->
-    <svg class="africa-map" viewBox="0 0 800 800">
-      <path d="M200,100 L600,150 L700,250 L650,400 L700,600 L400,700 L250,650 L120,520 L180,300 Z"
-        fill="#1ce0f8" stroke="#349ab0" stroke-width="3"/>
-    </svg>
-    <!-- Add your price tags with accurate figures and symbols -->
-    <div class="price-tag nigeria">
-      <img class="flag" src="https://flagcdn.com/ng.svg" alt="Nigeria flag">₦2,000,000
+    
+    <button id="download-btn">
+        <svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zm7-18c-.55 0-1 .45-1 1v10.59l-3.29-3.3a.996.996 0 1 0-1.41 1.41l5 5c.39.39 1.02.39 1.41 0l5-5a.996.996 0 1 0-1.41-1.41L13 13.59V3c0-.55-.45-1-1-1z"/></svg>
+        Print / Save as PDF
+    </button>
+
+    <div id="letter-container">
+        <div class="letterhead">
+            <img src="./images/Tech Mansion Logo.png" alt="Tech Mansion Logo">
+            <div class="letterhead-info">
+                <div class="letterhead-contact">
+                    <span>📧 techmansioninfo@gmail.com</span>
+                    <span>📞 +1 (860) 867-9664</span>
+                </div>
+            </div>
+        </div>
+        <div class="date">September 16, 2025</div>
+        <div class="recipient">To Whom It May Concern,</div>
+        <div class="letter-content">
+            <p>
+                I am writing in support of Tejumola Adebisi’s application to Northumbria University. I have had the privilege of working with Tejumola at Tech Mansion, a mobile technology media company where he has served as a Data Analyst from June 2021 to the present.
+            </p>
+            <p>
+                In this role, Tejumola has been responsible for analyzing complex data sets, extracting insights, and supporting strategic decision-making across our editorial and business operations. He has demonstrated exceptional attention to detail, advanced technical skills, and the ability to translate raw data into actionable recommendations. His analyses have directly informed our content strategy, audience engagement approaches, and performance optimization.
+            </p>
+            <p>
+                Beyond technical expertise, Tejumola consistently displays critical thinking, problem-solving ability, and intellectual curiosity. He approaches challenges with creativity, communicates findings clearly to both technical and non-technical colleagues, and collaborates effectively to implement solutions. His professionalism, discipline, and commitment to excellence have been outstanding throughout his time with us.
+            </p>
+            <p>
+                I am confident that Tejumola possesses the qualities necessary to thrive in postgraduate studies — including strong analytical skills, research capability, and academic discipline. He has the drive and intellectual rigor to make meaningful contributions to Northumbria University.
+            </p>
+            <p>
+                I strongly recommend Tejumola Adebisi for admission and would be pleased to provide further information if required.
+            </p>
+        </div>
+        <div class="signature-block">
+            <p>Sincerely,</p>
+            <p class="signature-name">Alexis Akagha</p>
+            <p class="signature-title">Director, Tech Mansion</p>
+        </div>
     </div>
-    <div class="price-tag egypt">
-      <img class="flag" src="https://flagcdn.com/eg.svg" alt="Egypt flag">E£ 86,000
-    </div>
-    <div class="price-tag southafrica">
-      <img class="flag" src="https://flagcdn.com/za.svg" alt="South Africa flag">R20,000
-    </div>
-    <div class="price-tag kenya">
-      <img class="flag" src="https://flagcdn.com/ke.svg" alt="Kenya flag">KSh 142,000
-    </div>
-    <div class="price-tag ghana">
-      <img class="flag" src="https://flagcdn.com/gh.svg" alt="Ghana flag">₵13,000
-    </div>
-    <div class="price-tag morocco">
-      <img class="flag" src="https://flagcdn.com/ma.svg" alt="Morocco flag">د.م. 11,000
-    </div>
-    <div class="price-tag algeria">
-      <img class="flag" src="https://flagcdn.com/dz.svg" alt="Algeria flag">دج 150,000
-    </div>
-    <div class="price-tag cameroon">
-      <img class="flag" src="https://flagcdn.com/cm.svg" alt="Cameroon flag">FCFA 916,000
-    </div>
-    <div class="price-tag ivc">
-      <img class="flag" src="https://flagcdn.com/ci.svg" alt="Ivory Coast flag">CFA 950,000
-    </div>
-    <div class="price-tag ethiopia">
-      <img class="flag" src="https://flagcdn.com/et.svg" alt="Ethiopia flag">Br 63,000
-    </div>
-  </div>
-  <div class="credit">@techmansion</div>
+
+    <script>
+        // Use the system print dialog so the PDF keeps selectable, searchable text
+        document.getElementById('download-btn').addEventListener('click', function () {
+            window.print();
+        });
+    </script>
 </body>
 </html>
